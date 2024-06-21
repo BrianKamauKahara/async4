@@ -1,4 +1,5 @@
 from asyncflows import AsyncFlows
+import os
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -16,6 +17,7 @@ import asyncio
 asyncio.run(main()) """
 import asyncio
 from asyncflows import AsyncFlows
+os.environ["OPENAI_API_KEY"]="sk"+"-XVnIAfl2Ftj0wW"+"TCqFGoT3BlbkFJNuvvPr1GRelPThlD4j4M"
 
 # Load the YAML file
 flow = AsyncFlows.from_file("hello_world.yaml")
